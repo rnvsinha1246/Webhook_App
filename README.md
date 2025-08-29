@@ -5,26 +5,6 @@ This app:
 2) Chooses the SQL question based on regNo (even → Question 2)
 3) Sends the final SQL query to the returned webhook using the JWT token (`Authorization` header)
 
-## Change anything?
-- Values already set for you:
-  - name: Arnav Sinha
-  - regNo: 22BCE0830 (even)
-  - email: arnav@example.com
-
-If you want, edit these in `WebhookService.java`.
-
-## Build & Run
-```bash
-mvn clean package
-java -jar target/webhook-sql-22bce0830-0.0.1-SNAPSHOT.jar
-```
-
-On startup it will:
-- POST to `/hiring/generateWebhook/JAVA`
-- Parse `webhook` (or `webhookUrl`/`url`) and `accessToken`
-- Compute final SQL for **Question 2** and POST it to the webhook
-  - Header: `Authorization: <accessToken>`
-  - Body: `{ "finalQuery": "<SQL>" }`
 
 ## Final SQL (Question 2)
 ```sql

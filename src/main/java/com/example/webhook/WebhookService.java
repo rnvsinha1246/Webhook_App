@@ -24,7 +24,7 @@ public class WebhookService {
         Map<String, String> request = new HashMap<>();
         request.put("name", "Arnav Sinha");
         request.put("regNo", "22BCE0830");
-        request.put("email", "arnav@example.com");
+        request.put("email", "arnav@gmail.com");
 
         ResponseEntity<Map> response = restTemplate.postForEntity(registrationUrl, request, Map.class);
         Map body = response.getBody();
