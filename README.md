@@ -21,5 +21,3 @@ LEFT JOIN EMPLOYEE e2
 GROUP BY e1.EMP_ID, e1.FIRST_NAME, e1.LAST_NAME, d.DEPARTMENT_NAME
 ORDER BY e1.EMP_ID DESC;
 ```
-
-> Note: The assignment text shows two variants for the submit URL. This app prioritizes the **webhook URL from the generate response**, and falls back to `/hiring/testWebhook/JAVA` if needed.
